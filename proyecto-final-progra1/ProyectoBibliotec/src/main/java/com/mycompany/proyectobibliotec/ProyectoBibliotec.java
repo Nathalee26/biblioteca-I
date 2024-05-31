@@ -3,14 +3,15 @@
  */
 
 package com.mycompany.proyectobibliotec;
+import vista.LoginForm;
 
-/**
- *
- * @author lenovo
- */
 public class ProyectoBibliotec {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+    public static void main(String[] args)throws Exception {
+        LoginForm login = new LoginForm();
+        login.setVisible(true);
+        
     }
 }
+//LOMBOK ES UNA LIBRERIA QUE DA ACCESO A LOS GETTER Y SETTER QUE YA ESTAN PRECARGADOS, COMPONENTES YA EXISTENTES. 
+

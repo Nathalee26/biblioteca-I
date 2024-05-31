@@ -19,7 +19,9 @@ public class LibroDAO {
     public List<Libro> readAll() {
         List<Libro> libros = new ArrayList<>();
         try {
+            
             preparedStatement = Conexion.getConnection().prepareStatement(QUERY_OBTENER_LIBROS);
+            //VAR es una variable local
             var resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 Libro libro = new Libro();

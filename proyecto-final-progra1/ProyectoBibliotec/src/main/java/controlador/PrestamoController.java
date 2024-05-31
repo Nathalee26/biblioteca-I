@@ -34,14 +34,16 @@ public class PrestamoController extends AbstractCrud<Prestamo, Integer>{
     public void executeDelete(Integer integer) {
         throw new UnsupportedOperationException();
     }
-
+    //bOOlean verdadero o falso
     public boolean verificarPrestamosTardios(int isbn, int usuarioID) {
-
+                //modelo el diamante 
         return Prestamo.listaDePrestamos.stream()
+                //anymatch un true o false dependiento de las validaciones dentro del parentesis 
+                //funcion flecha variable temporal, hereda todo lo que tiene mi clase prestamo
                 .anyMatch(prestamo -> prestamo.getUsuarioID() == usuarioID && prestamo.getLibroISBN() == isbn
                         && prestamo.getFechaVencimiento().before(new Date(System.currentTimeMillis()))
                         && prestamo.getFechaDevolucion()==null);
-    }
+    }           //VALIDACIONES 
 
     public void actualizarDevolucion(int id) {
         prestamoDAO.actualizarDevolucion(id);

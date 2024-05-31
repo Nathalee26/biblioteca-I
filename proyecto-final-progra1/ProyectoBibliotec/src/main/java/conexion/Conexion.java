@@ -8,12 +8,15 @@ import java.sql.DriverManager;
 
 
 
-
+//static no se pueda manipular 
 public class Conexion {
-    public static final String URL = "jdbc:postgresql://progra2024.postgres.database.azure.com:5432/pogra-final2024";
-    public static final String USER = "progra2024";
-    public static final String PASSWORD = "$Hello2024";
+    //Son 3 constantes para conectar base de datos
     
+    public static final String URL = "jdbc:postgresql://ep-nameless-term-a5tt6qru.us-east-2.aws.neon.tech:5432/Progra1";
+    public static final String USER = "Progra1_owner";
+    public static final String PASSWORD = "IdYgf5eaMcB9";
+    //metodo de instancia = 
+    //metodo de clase. y llama nuestra conexion 
      public static Connection getConnection() {
         Connection connection = null;
         try {
@@ -25,4 +28,5 @@ public class Conexion {
         return connection;
     }
 }
-    
+   //driver es propiedad del import  
+//todas las cosas que lleven .java son clases 

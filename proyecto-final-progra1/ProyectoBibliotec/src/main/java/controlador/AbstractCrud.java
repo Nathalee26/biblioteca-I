@@ -9,3 +9,4 @@ public abstract class AbstractCrud<T, ID> {
     public abstract boolean  executeUpdate(ID id);
     public abstract void executeDelete(ID id);
 }
+//Para no repetir codigo, implementando polimorfismo. 

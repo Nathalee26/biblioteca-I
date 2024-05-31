@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.biblioteca</groupId>
+    <groupId>com.mycompany</groupId>
     <artifactId>proyecto-biblioteca2024</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>com.biblioteca.proyecto.biblioteca2024.ProyectoBiblioteca2024</exec.mainClass>
+        <exec.mainClass>com.mycompany.proyectobibliotec.ProyectoBibliotec</exec.mainClass>
     </properties>
 
     <dependencies>
@@ -27,5 +27,11 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE140</version>
+        </dependency>
+ 
     </dependencies>
 </project>

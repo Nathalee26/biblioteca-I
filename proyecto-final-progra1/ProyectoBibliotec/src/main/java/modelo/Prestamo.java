@@ -10,6 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Prestamo {
+    //DTO INVESTIGAR
     public static List<Prestamo> listaDePrestamos = new ArrayList<>();
     private int id;
     private int usuarioID;
